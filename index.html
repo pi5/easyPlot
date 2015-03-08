@@ -27,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body cz-shortcut-listen="true">
+  <body cz-shortcut-listen="true" ng-controller="EasyPlotBodyController">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -38,12 +38,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://getbootstrap.com/examples/starter-template/#" ng-controller="EasyPlotController"> {{name}}</a>
+          <a class="navbar-brand" href="http://getbootstrap.com/examples/starter-template/#"> {{name}}</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <!--<li class="active"><a href="#"></a></li>-->
-            <!--<li><a href="http://getbootstrap.com/examples/starter-template/#about">About</a></li>-->
+            <li><a href="http://getbootstrap.com/examples/starter-template/#about">Help</a></li>
             <!--<li><a href="http://getbootstrap.com/examples/starter-template/#contact">Contact</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
@@ -53,10 +53,10 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Easy Plot</h1>
+        <div ng-view></div>
+        
       </div>
-
       <div>
 
       </div>
@@ -70,8 +70,9 @@
     <script src="./template_files/jquery.min.js"></script>
     <script src="./template_files/bootstrap.min.js"></script>
     <script src="./js/lib/angular.min.js"></script>
-    <!--<script src="./js/lib/angular-route.min.js"></script>-->
-    <script src="./js/controllers.js"></script>
+    <script src="./js/lib/angular-route.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/controller.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./template_files/ie10-viewport-bug-workaround.js"></script>
   
