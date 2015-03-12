@@ -1,7 +1,8 @@
 
 var easyPlot = angular.module('easyPlot', [
     'EasyPlotControllers',
-    'ngRoute'
+    'ngRoute',
+    'angular-flot'
 ]);
 
 easyPlot.config(['$routeProvider', 
